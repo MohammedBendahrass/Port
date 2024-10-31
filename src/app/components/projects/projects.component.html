@@ -1,0 +1,17 @@
+<section class="projects-section">
+    <h2>Academic Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <video controls>
+          <source [src]="project.videoUrl" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="info">
+          <h3>{{ project.title }}</h3>
+          <p [innerHTML]="project.description"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>

@@ -1,0 +1,12 @@
+<section class="certificates-section">
+    <h2>Certificates</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card" *ngFor="let certificate of certificates">
+        <h3>{{ certificate.title }}</h3>
+        <a [href]="certificate.urlHttps" target="_blank">
+          <img [src]="certificate.pdfUrl" alt="{{ certificate.title }}" width="100%" height="300px">
+        </a>
+      </div>
+    </div>
+</section>
+<router-outlet></router-outlet>

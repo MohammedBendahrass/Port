@@ -1,0 +1,26 @@
+.app-container {
+    min-height: 100vh;
+    position: relative;
+    background-image: url('/assets/cybersecurity-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .app-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    /* or */
+    /* background: rgba(255, 255, 255, 0.9); */ /* Light overlay */
+    z-index: 1;
+  }
+  main {
+    padding-top: 60px;
+    position: relative;
+    z-index: 2; /* Place content above the overlay */
+  }

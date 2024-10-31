@@ -1,0 +1,28 @@
+.skills-section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: cornflowerblue;
+  }
+
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: white;
+  }
+
+  th {
+    background-color: cornflowerblue;
+    color: white;
+  }

@@ -1,0 +1,14 @@
+<section class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-icons">
+      <a *ngFor="let link of contactLinks"
+        [href]="link.url"
+        [title]="link.title"
+        target="_blank"
+        rel="noopener noreferrer">
+        <mat-icon class="mtcolor" *ngIf="isMaterialIcon(link.icon)">{{ link.icon }}</mat-icon>
+        <img *ngIf="!isMaterialIcon(link.icon)" [src]="getCustomIcon(link.icon)" alt="{{ link.title }}" width="24">
+      </a>
+    </div>
+</section>
+<router-outlet></router-outlet>
